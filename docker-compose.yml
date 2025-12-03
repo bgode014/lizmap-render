@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  lizmap:
+    image: 3liz/lizmap-web-client:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - LIZMAP_ADMIN_PASSWORD=admin
+      - PGHOST=localhost
+      - PGPORT=5432
+    restart: always
