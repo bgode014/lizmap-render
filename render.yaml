@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: lizmap
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    healthCheckPath: /
+    region: oregon
+    autoDeploy: true
+    rootDir: /
